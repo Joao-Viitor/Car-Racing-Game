@@ -1,0 +1,358 @@
+body{
+    background-color: cornflowerblue;
+}
+
+.div{
+    perspective: 200px;
+    margin: 0px 400px;
+    position: relative;
+}
+
+.div1{
+    transform: rotateX(147deg);
+    top: 0;
+    width: 500px;
+    height: 700px;
+    background-color: black;
+    position: absolute;
+}
+
+@keyframes run{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top: 600px;
+    }
+}
+
+::webkit-scrollbar{
+    width: 13px;
+    background-color: gray;
+}
+
+::webkit-scrollbar-track{
+    width: 8px;
+    background-color: black;
+    box-shadow: 0px 0px 90px springgreen, 0px 0px 120px springgreen, 0px 0px 150px springgreen;
+}
+
+::webkit-scrollbar-thumb{
+    border-radius: 25px;
+    width: 5px;
+    background: linear-gradient(pink, skyblue);
+    box-shadow: 0px 0px 90px crimson, 0px 0px 120px crimson, 0px 0px 150px crimson;
+}
+
+::webkit-scrollbar-corner{
+    background: linear-gradient(45deg, dodgerblue, gold);
+}
+
+.arrow{
+    position: relative;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    z-index: 1;
+    left: 250px;
+    animation: run .5s linear infinite;
+}
+
+.arrow1{
+    position: relative;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    z-index: 1;
+    left: 250px;
+    top: 100px;
+    animation: srun .2s linear infinite;
+}
+
+@keyframes srun{
+    0%{
+        top: 120px;
+    }
+    100%{
+        top: 480px;
+    }
+}
+
+/*
+.arrow2{
+    animation: ssrun 20s linear infinite;
+    position: relative;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    z-index: 1;
+    left: 250px;
+    top: 200px;
+}
+
+.arrow3{
+    animation: sssrun 20s linear infinite;
+    position: relative;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    z-index: 1;
+    left: 250px;
+    top: 300px;
+}
+
+.arrow4{
+    position: relative;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    z-index: 1;
+    left: 250px;
+    top: 350px;
+    animation: ssssrun 20s linear infinite;
+}
+
+.arrow5{
+    animation: sssssrun 20s linear infinite;
+    position: relative;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    z-index: 1;
+    left: 250px;
+    top: 400px;
+}
+
+.arrow6{
+    animation: ssssssrun 20s linear infinite;
+    position: relative;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    z-index: 1;
+    left: 250px;
+    top: 450px;
+}
+*/
+
+.img{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+    left: 700px;
+    top: 400px;
+    transform: rotateY(35deg);
+}
+
+#btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: inset 0px 20px 0px yellow;
+    background-color: darkslategray;
+    color: white;
+    font-size: 35px;
+}
+
+#rtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: inset 0px 20px 0px yellow;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 35px;
+}
+
+h1{
+    position: absolute;
+    font-size: 50px;
+    font-family: cursive;
+    margin: 5px 500px;
+    width: 400px;
+    color: crimson;
+    text-shadow: 0px 0px 30px gray, 0px 0px 60px crimson, 0px 0px 90px violet;
+}
+
+.helicopter{
+    position: absolute;
+    width: 200px;
+    height: 150px;
+    animation: helicopter 13s linear infinite;
+    left: 0px;
+    top: 100px;
+}
+
+@keyframes helicopter{
+    10%{left: 10%; top: 100%;}
+    20%{left: 20%; top: 110%;}
+    30%{left: 30%; top: 100%;}
+    40%{left: 40%; top: 110%;}
+    50%{left: 40%; top: 100%;}
+    60%{left: 40%; top: 110%;}
+    70%{left: 40%; top: 100%;}
+    80%{left: 40%; top: 110%;}
+    90%{left: 40%; top: 100%;}
+    100%{left: 100%; top: 110%;}
+}
+
+.race{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 320px;
+    left: 150px;
+    animation: race 3s linear infinite;
+    perspective: 200px;
+    z-index:1;
+}
+
+@keyframes race{
+    0%{width: 0px; height: 0px; left: 150px;}
+    20%{width: 50px; height: 50px; left: 50px;}
+    40%{width: 100px; height: 100px; left: 40px;}
+    60%{width: 150px; height: 150px; left: 30px;}
+    80%{width: 200px; height: 200px; left: 20px;}
+    100%{width: 200px; height: 200px; left: 10px;}
+}
+
+.audio{
+    position: absolute;
+    left: 150px;
+}
+
+.road{
+    width: 50px;
+    height: 700px;
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    transform: rotateY(180deg);
+    margin: 0px 0px;
+    z-index: 1;
+}
+
+.road1{
+    width: 50px;
+    height: 700px;
+    position: absolute;
+    background-color: white;
+    top: 0px;
+    transform: rotateY(180deg);
+    left: 450px;
+    z-index: 1;
+}
+
+/*
+.block{
+    width: 530px;
+    height: 50px;
+    background-color: olivedrab;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+    transform: rotateY(13deg);
+    position: absolute;
+    z-index: 1;
+    margin: 320px 0px;
+    border: 2px solid black;
+}
+
+.block1{
+    width: 530px;
+    height: 50px;
+    background-color: olivedrab;
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    transform: rotateY(-15deg);
+    position: absolute;
+    z-index: 1;
+    margin: 330px 0px;
+    border: 2px solid black;
+}
+*/
+
+.per{
+    position: relative;
+    perspective: 400px;
+    transform: rotateY(10deg);
+}
+
+.treeleft{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 230px 430px;
+    animation: tree 1s linear infinite;
+}
+
+@keyframes tree{
+    0%{margin: 235px 300px;}
+    20%{margin: 250px 200px;}
+    40%{margin: 265px 100px;}
+    60%{margin: 280px 50px;}
+    80%{margin: 290px 0px;}
+    100%{margin: 290px 0px;}
+}
+
+.treeright{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin: 235px 800px;
+    animation: trees 1s linear infinite;
+}
+
+@keyframes trees{
+    0%{margin: 235px 900px;}
+    20%{margin: 250px 1000px;}
+    40%{margin: 265px 1100px;}
+    60%{margin: 280px 1200px;}
+    80%{margin: 295px 1300px;}
+    100%{margin: 310px 1400px;}
+}
+
+.frontcar{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    margin: 300px 550px;
+    animation: front 10s linear infinite;
+}
+
+@keyframes front{
+    0%{width: 80px;height: 40px;margin: 300px 550px;}
+    20%{width: 100px;height: 60px;margin: 320px 500px;}
+    40%{width: 120px;height: 80px;margin: 350px 410px;}
+    60%{width: 140px;height: 100px;margin: 380px 370px;}
+    80%{width: 150px;height: 110px;margin: 470px 530px;}
+    100%{width: 150px;height: 110px;margin: 500px 300px;}
+}
+
+#score{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    background-color: black;
+    margin: 0px 500px;
+    font-size: 25px;
+    color: white;
+    top: 0px;
+    text-align: right;
+}
+
+.scores{
+    position: absolute;
+    color: white;
+    top: 0px;
+    margin: 0px 500px;
+    font-size: 25px;
+}
